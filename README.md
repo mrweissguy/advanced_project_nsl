@@ -3,11 +3,11 @@ This repository contains code for our project exploring NSL.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
-The notebooks is created using python 3.7.
+The notebooks is created using python 3.7. To run the code in jupyter notebooks, be sure to install [Anaconda](https://www.anaconda.com/distribution/)
 
 To run the notebooks multiple libraries needs to be installed:
 * neural_structured_learning
@@ -22,6 +22,8 @@ pip install neural_structured_learning
 ```
 pip install tensorflow
 ```
+
+To run the grakn database first download grakn from their [webpage](https://grakn.ai/download). Load the script into the enviroment and you are ready to test out the data.
 
 <!-- ### Installing
 
@@ -80,9 +82,9 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).  -->
 
 ## Authors
-* **Aleksander Frese** - *Initial work*
-* **Sultan Tariq** - *Initial work* 
-* **Johan Weiss** - *Initial work*
+* **Aleksander Frese** - *Grakn and politician dataset (dataset 4)*
+* **Sultan Tariq** - *Adverserial learning (dataset 5-6)* 
+* **Johan Weiss** - *Neural Graph Learning (dataset 1-3)*
 
 <!-- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. -->
 
@@ -92,7 +94,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Jakob Eg Larsen
+* Jakob Andreas Bærentzen
+
 
