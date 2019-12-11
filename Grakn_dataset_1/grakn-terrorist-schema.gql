@@ -1,0 +1,61 @@
+
+#-------------------------------------#
+#
+# 6 NOV 2019
+# Aleksander Frese (s163859)
+# Creating the schema (empty graph) for
+# terrorist network
+# Execute in terminal:
+#
+# grakn console -k terrorist_network2 -f terrorist-schema2.gql
+#
+# This schema creates the relation descriptions (family, colleague, etc.) 
+# as ENTITY ROLES instead of relation attributes.
+#
+#-------------------------------------#
+
+
+# an entity is an instance of a concept that can play a role in a relation with another instance of another or same entity
+
+define
+
+	# entities
+	person sub entity,
+		has tID,
+		has name,
+		has nationality,
+		has affiliation,
+		plays relative, 	 # source and target in relation Family
+		plays colleague, 	 # source and target in relation Organisation
+		plays contactor, 	 # source in relation Contact
+		plays contactee, 	 # target in relation Contact
+		plays participant;   # source and target in relation Congregation 
+
+	# relations
+	Organisation sub relation,
+		relates colleague,
+		has rel_url;
+	Family sub relation,
+		relates relative,
+		has rel_url;
+	Contact sub relation,
+		relates contactor, # source in relation Contact
+		relates contactee, # target in relation Contact
+		has rel_url;
+	Congregation sub relation,
+		relates participant,
+		has rel_url;
+
+	# entity and relation atributes types
+	tID sub attribute,
+		datatype string;
+	name sub attribute,
+		datatype string;
+	nationality sub attribute,
+		datatype string;
+	affiliation sub attribute,
+		datatype string;
+	rel_url sub attribute,
+		datatype string;
+
+
