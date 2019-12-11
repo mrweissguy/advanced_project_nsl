@@ -16,7 +16,7 @@ To run the notebooks multiple libraries needs to be installed:
 The installation process is straight forward.
 
 ```
-pip install neural_structured_learning
+pip install neural-structured-learning
 ```
 
 ```
