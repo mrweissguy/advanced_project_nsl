@@ -15,7 +15,7 @@ To run the notebooks install the libraries listed below:
 * csv
 * numpy
 * pandas
-* matplotlib.pyplot
+* matplotlib
 
 The installation process is straight forward.
 
